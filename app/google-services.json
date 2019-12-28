@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1022562414450",
+    "firebase_url": "https://tridme-demo.firebaseio.com",
+    "project_id": "tridme-demo",
+    "storage_bucket": "tridme-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022562414450:android:f4c9c2f90ebc238d",
+        "android_client_info": {
+          "package_name": "com.trid.demo.travel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022562414450-m2076t4bsid8eu87m6cljfuloslmmkrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ0O3P0u6rCYCA0eUIqyNt-Fn91-TXjeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022562414450-m2076t4bsid8eu87m6cljfuloslmmkrr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1022562414450-d99kc119c0acu72rum2nd2oak4vnkatj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trid.demo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
