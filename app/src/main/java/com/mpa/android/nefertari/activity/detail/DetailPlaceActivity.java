@@ -633,15 +633,16 @@ public class DetailPlaceActivity extends AppCompatActivity implements OnMapReady
                     tvNumberLove.setText(Utils.countLove(place.getLoved()) + "");
 
 
-                    for (String photo : place.getPhotos()) {
-                        DefaultSliderView textSliderView = new DefaultSliderView(this);
-                        // initialize a SliderLayout
-                        textSliderView
-                                .image(photo)
-                                .setScaleType(BaseSliderView.ScaleType.CenterCrop)
-                                .setOnSliderClickListener(this);
-                        mDemoSlider.addSlider(textSliderView);
-
+                    if (place.getPhotos() != null) {
+                        for (String photo : place.getPhotos()) {
+                            DefaultSliderView textSliderView = new DefaultSliderView(this);
+                            // initialize a SliderLayout
+                            textSliderView
+                                    .image(photo)
+                                    .setScaleType(BaseSliderView.ScaleType.CenterCrop)
+                                    .setOnSliderClickListener(this);
+                            mDemoSlider.addSlider(textSliderView);
+                        }
                     }
 
                     tvTitleActivity.setText(place.getName());
