@@ -23,6 +23,7 @@ import java.util.List;
 
 import io.fabric.sdk.android.services.common.SafeToast;
 import com.mpa.android.nefertari.TipApplication;
+import com.mpa.android.nefertari.Uts;
 import com.mpa.android.nefertari.activity.askNshare.AskShareActivity;
 import com.mpa.android.nefertari.activity.detail.TipView.TipAdapter;
 import com.mpa.android.nefertari.activity.detail.seedoo.SeeDoHomeAdapter;
@@ -250,6 +251,7 @@ public class HomeFragment extends Fragment {
                 try {
                     Place place = detailTabsActivity.placeService.getItem(i).getValue(Place.class);
                     place.setPlaceKey(detailTabsActivity.placeService.getItem(i).getKey());
+                    place.setName((String) detailTabsActivity.placeService.getItem(i).child("name"+Uts.getInstance().lang_prefix()).getValue());;
                     if (place != null && place.getCategories() != null
                             && place.getCategories().size() > 0
                             && place.getCategories().toString().contains(category0Key) && !place.isDeactived()) {
