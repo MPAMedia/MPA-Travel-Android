@@ -77,10 +77,12 @@ public class SeeDoHomeAdapter extends RecyclerView.Adapter<SeeDoViewHolder> {
 
         FontUtils.setFont(holder.tvCityFee, FontUtils.TYPE_NORMAL);
 
-        if(list.get(position).getPhotos().get(0).contains("http")) {
-            ImageLoader.getInstance().displayImage(list.get(position).getPhotos().get(0), holder.imvCityThumb, TipApplication.defaultOptions);
-        } else {
-            holder.imvCityThumb.setImageResource(R.drawable.img_default);
+        if (list.get(position).getPhotos() != null){
+            if(list.get(position).getPhotos().get(0).contains("http")) {
+                ImageLoader.getInstance().displayImage(list.get(position).getPhotos().get(0), holder.imvCityThumb, TipApplication.defaultOptions);
+            } else {
+                holder.imvCityThumb.setImageResource(R.drawable.img_default);
+            }
         }
         holder.imvCityThumb.setOnClickListener(new View.OnClickListener() {
             @Override
