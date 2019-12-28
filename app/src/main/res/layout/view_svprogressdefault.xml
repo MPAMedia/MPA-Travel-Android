@@ -36,7 +36,7 @@
             android:scaleType="centerInside"
             android:visibility="gone" />
 
-        <tip.tdc.com.tip.utils.SVprogressHUD.SVCircleProgressBar
+        <com.mpa.android.nefertari.utils.SVprogressHUD.SVCircleProgressBar
 
             android:id="@+id/circleProgressBar"
             android:layout_width="@dimen/size_image_smallloading"

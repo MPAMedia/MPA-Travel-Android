@@ -10,7 +10,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tip.tdc.com.tip.activity.iap.IAPActivity">
+    tools:context="com.mpa.android.nefertari.activity.iap.IAPActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="tip.tdc.com.tip.activity.detail.DetailTabsActivity$PlaceholderFragment">
+    tools:context="com.mpa.android.nefertari.activity.detail.DetailTabsActivity$PlaceholderFragment">
 
     <LinearLayout
         android:id="@+id/llCategory1"

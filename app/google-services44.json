@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:575226533745:android:889a89db0e2d9f35",
         "android_client_info": {
-          "package_name": "com.rwandadestinations.android"
+          "package_name": "com.mpa.android.nefertari"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "575226533745-tt5g2m0eoir7kbac3ug662bj4j5ksduc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.rwandadestinations.android",
+            "package_name": "com.mpa.android.nefertari",
             "certificate_hash": "14417c79c88e13b6f2ee359d34cb6f1d041cfcac"
           }
         },

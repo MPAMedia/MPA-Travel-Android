@@ -9,10 +9,10 @@
     android:fillViewport="true"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="tip.tdc.com.tip.activity.detail.DetailPlaceActivity"
+    tools:context="com.mpa.android.nefertari.activity.detail.DetailPlaceActivity"
     tools:showIn="@layout/activity_detail">
 
-    <tip.tdc.com.tip.utils.CustomScrollView
+    <com.mpa.android.nefertari.utils.CustomScrollView
         android:id="@+id/scrollPlaceDetail"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -429,7 +429,7 @@
 
                 <fragment
                     android:id="@+id/map"
-                    class="tip.tdc.com.tip.activity.detail.MySupportMapFragment"
+                    class="com.mpa.android.nefertari.activity.detail.MySupportMapFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
 
@@ -438,6 +438,6 @@
 
             <include layout="@layout/content_place_contact" />
         </LinearLayout>
-    </tip.tdc.com.tip.utils.CustomScrollView>
+    </com.mpa.android.nefertari.utils.CustomScrollView>
 
 </android.support.v4.widget.NestedScrollView>

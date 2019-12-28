@@ -1,6 +1,7 @@
 <resources>
+    <string name="lang_prefix">_en</string>
     <string name="app_name">Trid City Guide</string>
-z
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
@@ -37,7 +38,7 @@ z
     <string name="fullScreen">ca-app-pub-6834102610739631/4510902259</string>
 
 
-            //-------------for test
+    //-------------for test
     <!--<string name="bannerAd">ca-app-pub-3940256099942544/6300978111</string>-->
     <!--<string name="fullScreen">ca-app-pub-3940256099942544/1033173712</string>-->
 
@@ -172,9 +173,9 @@ z
     <string name="title_login_btn_menu">Login</string>
     <string name="title_signup_btn_menu">Sign Up</string>
 
-    <string name="degrees_placeholderC" translatable="false">%d°C</string>
-    <string name="degrees_placeholderF" translatable="false">%d°F</string>
-    <string name="degrees_icon" translatable="false">°</string>
+    <string name="degrees_placeholderC">%d°C</string>
+    <string name="degrees_placeholderF">%d°F</string>
+    <string name="degrees_icon">°</string>
     <string name="now">NOW</string>
     <string name="today">today</string>
     <string name="_5_day">5 day</string>
@@ -192,4 +193,6 @@ z
     <string name="minute_ago">Minute ago</string>
     <string name="hour_ago">Hour ago</string>
     <string name="day_ago">Days ago</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
 </resources>

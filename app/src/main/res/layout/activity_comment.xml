@@ -4,7 +4,7 @@
     android:id="@+id/activity_comment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tip.tdc.com.tip.activity.comment.CommentActivity">
+    tools:context="com.mpa.android.nefertari.activity.comment.CommentActivity">
 
     <LinearLayout
         android:id="@+id/topbarView"

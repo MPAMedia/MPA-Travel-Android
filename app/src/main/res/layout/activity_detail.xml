@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBlue600"
 
-    tools:context="tip.tdc.com.tip.activity.detail.DetailPlaceActivity">
+    tools:context="com.mpa.android.nefertari.activity.detail.DetailPlaceActivity">
 
 
     <include layout="@layout/content_place_detail" />

@@ -36,7 +36,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '28.0.3'
     defaultConfig {
-        applicationId          "com.trid.demo.travel" //"com.rwandadestinations.android" //com.bpackingapp.vietnam.travel
+        applicationId          "com.mpa.android.nefertari" //"com.mpa.android.nefertari" //com.mpa.android.nefertari
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 18

@@ -10,7 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    tools:context="tip.tdc.com.tip.activity.askNshare.AskShareActivity">
+    tools:context="com.mpa.android.nefertari.activity.askNshare.AskShareActivity">
 
     <RelativeLayout
         android:id="@+id/topbar"

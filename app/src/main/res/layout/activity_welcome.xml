@@ -64,7 +64,7 @@
             android:lineSpacingExtra="4dp"
             android:textSize="20dp" />
 
-        <tip.tdc.com.tip.activity.introslide.PageIndicator
+        <com.mpa.android.nefertari.activity.introslide.PageIndicator
             android:id="@+id/indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

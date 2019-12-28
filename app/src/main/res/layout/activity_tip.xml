@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="tip.tdc.com.tip.activity.tip.TipActivity">
+    tools:context="com.mpa.android.nefertari.activity.tip.TipActivity">
 
     <RelativeLayout
         android:id="@+id/llTopbar"

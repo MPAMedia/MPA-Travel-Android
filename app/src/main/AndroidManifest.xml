@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bpackingapp.vietnam.travel">
+    package="com.mpa.android.nefertari">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -9,16 +9,11 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!-- To auto-complete the email text field in the login form with the user's emails -->
-    <!--<uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
-    <uses-permission android:name="android.permission.READ_PROFILE" />
-    <!--<uses-permission android:name="android.permission.READ_CONTACTS" />-->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- if you want to load images from a file OR from the internet -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <!--iap-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.READ_PROFILE" /> <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- iap -->
     <uses-permission android:name="com.android.vending.BILLING" />
 
 
@@ -27,7 +22,7 @@
     <!-- GET_ACCOUNTS is necessary to display email address of logged in user. This permission is optional -->
     <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
     <application
-        android:name="tip.tdc.com.tip.TipApplication"
+        android:name="com.mpa.android.nefertari.TipApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -36,7 +31,11 @@
 
         android:theme="@style/AppTheme">
         <activity
-            android:name="tip.tdc.com.tip.activity.login.LoginActivity"
+            android:name="com.mpa.android.nefertari.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mpa.android.nefertari.activity.login.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
@@ -49,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="tip.tdc.com.tip.activity.search.SearchActivity"
+            android:name="com.mpa.android.nefertari.activity.search.SearchActivity"
             android:label="@string/title_activity_search"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -67,27 +66,27 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="tip.tdc.com.tip.activity.detail.DetailPlaceActivity"
+            android:name="com.mpa.android.nefertari.activity.detail.DetailPlaceActivity"
             android:label="@string/title_activity_detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.BaseActivity"
+            android:name="com.mpa.android.nefertari.activity.BaseActivity"
             android:label="@string/title_activity_base"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.information.PrivacyActivity"
+            android:name="com.mpa.android.nefertari.activity.information.PrivacyActivity"
             android:label="@string/title_activity_privacy"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.information.AboutActivity"
+            android:name="com.mpa.android.nefertari.activity.information.AboutActivity"
             android:label="@string/title_activity_about"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.introslide.SlideIntroductionActivity"
+            android:name="com.mpa.android.nefertari.activity.introslide.SlideIntroductionActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -98,7 +97,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="tip.tdc.com.tip.activity.home.HomeActivity"
+            android:name="com.mpa.android.nefertari.activity.home.HomeActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -108,7 +107,7 @@
             android:value="fa6f8996fe7deeeac22a7a9aae5f47a0c5c7f06a" />
 
         <activity
-            android:name="tip.tdc.com.tip.activity.detail.DetailTabsActivity"
+            android:name="com.mpa.android.nefertari.activity.detail.DetailTabsActivity"
             android:label="@string/title_activity_detail_tabs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -121,23 +120,23 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="tip.tdc.com.tip.activity.bookticket.BookTicketActivity"
+            android:name="com.mpa.android.nefertari.activity.bookticket.BookTicketActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.login.TermOfServiceActivity"
+            android:name="com.mpa.android.nefertari.activity.login.TermOfServiceActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.visa.VisaActivity"
+            android:name="com.mpa.android.nefertari.activity.visa.VisaActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.askNshare.AskShareActivity"
+            android:name="com.mpa.android.nefertari.activity.askNshare.AskShareActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.detail.TransportActivity"
+            android:name="com.mpa.android.nefertari.activity.detail.TransportActivity"
             android:label="@string/title_activity_detail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -148,7 +147,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="tip.tdc.com.tip.activity.weather.WeatherActivity"
+            android:name="com.mpa.android.nefertari.activity.weather.WeatherActivity"
             android:label="@string/title_activity_weather"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
@@ -159,7 +158,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="tip.tdc.com.tip.activity.comment.CommentActivity"
+            android:name="com.mpa.android.nefertari.activity.comment.CommentActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -172,11 +171,11 @@
 
         </activity>
         <activity
-            android:name="tip.tdc.com.tip.activity.signup.SignupActivity"
+            android:name="com.mpa.android.nefertari.activity.signup.SignupActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.saved.SavedActivity"
+            android:name="com.mpa.android.nefertari.activity.saved.SavedActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -193,21 +192,21 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="tip.tdc.com.tip.activity.detail.PlaceDescriptionActivity"
+            android:name="com.mpa.android.nefertari.activity.detail.PlaceDescriptionActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.tip.TipActivity"
+            android:name="com.mpa.android.nefertari.activity.tip.TipActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.filter.FilterActivity"
+            android:name="com.mpa.android.nefertari.activity.filter.FilterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="tip.tdc.com.tip.activity.iap.IAPActivity"
+            android:name="com.mpa.android.nefertari.activity.iap.IAPActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

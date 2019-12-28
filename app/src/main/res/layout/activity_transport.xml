@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue600"
-    tools:context="tip.tdc.com.tip.activity.detail.TransportActivity">
+    tools:context="com.mpa.android.nefertari.activity.detail.TransportActivity">
 
     <!--<RelativeLayout-->
         <!--android:layout_width="match_parent"-->

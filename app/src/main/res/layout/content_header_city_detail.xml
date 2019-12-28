@@ -35,26 +35,26 @@
         android:id="@+id/tvWeatherTemp"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_above="@+id/tvCityDescription"
+        android:layout_marginBottom="@dimen/margin_small"
         android:layout_marginRight="@dimen/margin_large"
         android:gravity="right"
         android:text="---"
         android:textColor="@color/white"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+
+        />
 
     <TextView
         android:id="@+id/tvCityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tvCityDescription"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="@dimen/margin_large"
         android:maxLines="1"
         android:text="---"
         android:textColor="@color/white"
-        android:textSize="25dp" />
+        android:textSize="35sp"
+        android:layout_centerInParent="true"/>
 
     <TextView
         android:id="@+id/tvCityDescription"
@@ -64,6 +64,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="@dimen/margin_large"
         android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
         android:maxLines="1"
         android:text="---"
         android:textColor="@color/colorGrey50"

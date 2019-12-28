@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tip.tdc.com.tip.activity.detail.PlaceDescriptionActivity">
+    tools:context="com.mpa.android.nefertari.activity.detail.PlaceDescriptionActivity">
 
     <RelativeLayout
         android:id="@+id/layoutTopBar"

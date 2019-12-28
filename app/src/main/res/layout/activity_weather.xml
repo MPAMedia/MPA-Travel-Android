@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="tip.tdc.com.tip.activity.weather.WeatherActivity">
+    tools:context="com.mpa.android.nefertari.activity.weather.WeatherActivity">
 
     <include layout="@layout/content_weather" />
 

@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="tip.tdc.com.tip.activity.detail.DetailTabsActivity">
+        tools:context="com.mpa.android.nefertari.activity.detail.DetailTabsActivity">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appbar"
@@ -121,7 +121,7 @@
             android:fillViewport="true"
 
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:context="tip.tdc.com.tip.activity.information.PrivacyActivity"
+            tools:context="com.mpa.android.nefertari.activity.information.PrivacyActivity"
             tools:showIn="@layout/activity_privacy">
 
             <LinearLayout
@@ -142,7 +142,7 @@
 
                         <fragment
                             android:id="@+id/map"
-                            class="tip.tdc.com.tip.activity.detail.MySupportMapFragment"
+                            class="com.mpa.android.nefertari.activity.detail.MySupportMapFragment"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" />
 

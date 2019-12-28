@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "1022562414450",
-    "firebase_url": "https://tridme-demo.firebaseio.com",
-    "project_id": "tridme-demo",
-    "storage_bucket": "tridme-demo.appspot.com"
+    "project_number": "35857925463",
+    "firebase_url": "https://mpa-travel.firebaseio.com",
+    "project_id": "mpa-travel",
+    "storage_bucket": "mpa-travel.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1022562414450:android:f4c9c2f90ebc238d",
+        "mobilesdk_app_id": "1:35857925463:android:40f30f6e2430947ff52a12",
         "android_client_info": {
-          "package_name": "com.trid.demo.travel"
+          "package_name": "com.mpa.android.nefertari"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1022562414450-m2076t4bsid8eu87m6cljfuloslmmkrr.apps.googleusercontent.com",
+          "client_id": "35857925463-li36nl53vkd281338gej7p8496svk2mc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCJ0O3P0u6rCYCA0eUIqyNt-Fn91-TXjeI"
+          "current_key": "AIzaSyC92X9SHtnUfUUNRJTkdpM7CqEjXmT2OHw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1022562414450-m2076t4bsid8eu87m6cljfuloslmmkrr.apps.googleusercontent.com",
+              "client_id": "35857925463-li36nl53vkd281338gej7p8496svk2mc.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1022562414450-d99kc119c0acu72rum2nd2oak4vnkatj.apps.googleusercontent.com",
+              "client_id": "35857925463-5pu3ug3k4oa3d2g3r960s5mtp07438qu.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.trid.demo"
+                "bundle_id": "com.mpa.nefertari"
               }
             }
           ]

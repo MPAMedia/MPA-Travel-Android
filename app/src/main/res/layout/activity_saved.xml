@@ -12,7 +12,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="tip.tdc.com.tip.activity.information.AboutActivity">
+    tools:context="com.mpa.android.nefertari.activity.information.AboutActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -56,7 +56,7 @@
 
     </RelativeLayout>
 
-    <tip.tdc.com.tip.utils.view.stickylistheaders.StickyListHeadersListView
+    <com.mpa.android.nefertari.utils.view.stickylistheaders.StickyListHeadersListView
         android:id="@+id/lvSaved"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

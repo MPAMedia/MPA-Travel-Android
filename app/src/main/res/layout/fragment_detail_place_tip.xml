@@ -10,7 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingBottom="@dimen/margin_extra_large_2"
-    tools:context="tip.tdc.com.tip.activity.detail.DetailTabsActivity$PlaceholderFragment">
+    tools:context="com.mpa.android.nefertari.activity.detail.DetailTabsActivity$PlaceholderFragment">
 
     <LinearLayout
         android:id="@+id/llCategory1"
