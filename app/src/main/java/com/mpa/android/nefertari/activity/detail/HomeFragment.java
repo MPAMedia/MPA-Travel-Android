@@ -251,7 +251,9 @@ public class HomeFragment extends Fragment {
                 try {
                     Place place = detailTabsActivity.placeService.getItem(i).getValue(Place.class);
                     place.setPlaceKey(detailTabsActivity.placeService.getItem(i).getKey());
-                    place.setName((String) detailTabsActivity.placeService.getItem(i).child("name"+Uts.getInstance().lang_prefix()).getValue());;
+                    place.setName((String) detailTabsActivity.placeService.getItem(i).child("name"+Uts.getInstance().lang_prefix()).getValue());
+                    place.setDescription((String) detailTabsActivity.placeService.getItem(i).child("description"+Uts.getInstance().lang_prefix()).getValue());
+                    place.setPhonenumber((String) detailTabsActivity.placeService.getItem(i).child("phonenumber"+Uts.getInstance().lang_prefix()).getValue());
                     if (place != null && place.getCategories() != null
                             && place.getCategories().size() > 0
                             && place.getCategories().toString().contains(category0Key) && !place.isDeactived()) {
