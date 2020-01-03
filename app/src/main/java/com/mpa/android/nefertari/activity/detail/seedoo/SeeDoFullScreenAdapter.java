@@ -61,7 +61,7 @@ public class SeeDoFullScreenAdapter extends RecyclerView.Adapter<SeeDoViewHolder
 
         if (list.get(position).isBanner()) {
             holder.imvBanner.setVisibility(View.VISIBLE);
-            if (list.get(position).getPhotos().get(0).contains("http")) {
+            if (list.get(position).getPhotos() != null && list.get(position).getPhotos().get(0).contains("http")) {
                 ImageLoader.getInstance().displayImage(list.get(position).getPhotos().get(0), holder.imvBanner, TipApplication.defaultOptions);
             } else {
                 holder.imvBanner.setImageResource(R.drawable.img_default);
