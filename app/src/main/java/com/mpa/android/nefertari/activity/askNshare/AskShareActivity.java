@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import java.util.ArrayList;
 import java.util.Collections;
 import com.mpa.android.nefertari.TipApplication;
+import com.mpa.android.nefertari.Uts;
 import com.mpa.android.nefertari.activity.detail.DialogTip;
 import com.mpa.android.nefertari.activity.detail.TipView.TipFullScreenAdapter;
 import com.mpa.android.nefertari.data.AppConstants;
@@ -199,6 +200,9 @@ public class AskShareActivity extends AppCompatActivity {
                             if (place.getCategories() != null && place.getCategories().toString().contains(category0Key)) {
                                 LoggerFactory.d(TAG, "parse place: " + place.toString());
                                 place.setPlaceKey(placeService.getItem(i).getKey());
+                                place.setName((String) placeService.getItem(i).child("name"+ Uts.getInstance().lang_prefix()).getValue());
+                                place.setDescription((String) placeService.getItem(i).child("description"+Uts.getInstance().lang_prefix()).getValue());
+                                place.setPhonenumber((String) placeService.getItem(i).child("phonenumber"+Uts.getInstance().lang_prefix()).getValue());
                                 if (isAdminTip(place.getSubcategories())) {
                                     listTopTip.add(place);
                                 } else {

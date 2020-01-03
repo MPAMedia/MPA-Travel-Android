@@ -23,6 +23,7 @@ import java.util.List;
 
 import io.realm.Realm;
 import com.mpa.android.nefertari.TipApplication;
+import com.mpa.android.nefertari.Uts;
 import com.mpa.android.nefertari.activity.detail.TipView.TipFullScreenAdapter;
 import com.mpa.android.nefertari.activity.detail.seedoo.SeeDoFullScreenAdapter;
 import com.mpa.android.nefertari.activity.filter.FilterActivity;
@@ -158,6 +159,9 @@ public class PlaceFragment extends Fragment {
                 if(!place.isDeactived()) {
                     if (place.getCategories() != null && place.getCategories().toString().contains(category0Key)) {
                         place.setPlaceKey(detailTabsActivity.placeService.getItem(i).getKey());
+                        place.setName((String) detailTabsActivity.placeService.getItem(i).child("name"+ Uts.getInstance().lang_prefix()).getValue());
+                        place.setDescription((String) detailTabsActivity.placeService.getItem(i).child("description"+Uts.getInstance().lang_prefix()).getValue());
+                        place.setPhonenumber((String) detailTabsActivity.placeService.getItem(i).child("phonenumber"+Uts.getInstance().lang_prefix()).getValue());
                         listPlace.add(place);
                         listPlaceFiltered.add(place);
                     }

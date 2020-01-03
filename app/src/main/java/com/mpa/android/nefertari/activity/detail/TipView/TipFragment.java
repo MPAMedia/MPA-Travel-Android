@@ -23,6 +23,7 @@ import java.util.ArrayList;
 
 import io.fabric.sdk.android.services.common.SafeToast;
 import com.mpa.android.nefertari.TipApplication;
+import com.mpa.android.nefertari.Uts;
 import com.mpa.android.nefertari.activity.detail.DetailTabsActivity;
 import com.mpa.android.nefertari.activity.detail.TipView.TipFullScreenAdapter;
 import com.mpa.android.nefertari.activity.detail.seedoo.SeeDoFullScreenAdapter;
@@ -127,6 +128,9 @@ public class TipFragment extends Fragment {
                 if (detailTabsActivity.placeService.getItem(i).getValue(Place.class).getCategories().toString().contains(category0Key)) {
                     Place place = detailTabsActivity.placeService.getItem(i).getValue(Place.class);
                     place.setPlaceKey(detailTabsActivity.placeService.getItem(i).getKey());
+                    place.setName((String) detailTabsActivity.placeService.getItem(i).child("name"+ Uts.getInstance().lang_prefix()).getValue());
+                    place.setDescription((String) detailTabsActivity.placeService.getItem(i).child("description"+Uts.getInstance().lang_prefix()).getValue());
+                    place.setPhonenumber((String) detailTabsActivity.placeService.getItem(i).child("phonenumber"+Uts.getInstance().lang_prefix()).getValue());
                     if(isAdminTip(place.getSubcategories())){
                         listTopTip.add(place);
                     } else {

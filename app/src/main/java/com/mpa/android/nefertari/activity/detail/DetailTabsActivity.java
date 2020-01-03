@@ -57,6 +57,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseError;
 import com.google.maps.android.clustering.ClusterManager;
+import com.mpa.android.nefertari.Uts;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
@@ -605,6 +606,9 @@ public class DetailTabsActivity extends AppCompatActivity implements WeatherCont
                                     if (place != null && !place.isDeactived()) {
 //                                        LoggerFactory.d(placeService.getItem(i).getValue(Place.class).toString());
                                         place.setPlaceKey(placeService.getItem(i).getKey());
+                                        place.setName((String) placeService.getItem(i).child("name"+ Uts.getInstance().lang_prefix()).getValue());
+                                        place.setDescription((String) placeService.getItem(i).child("description"+Uts.getInstance().lang_prefix()).getValue());
+                                        place.setPhonenumber((String) placeService.getItem(i).child("phonenumber"+Uts.getInstance().lang_prefix()).getValue());
                                         listAllPlace.add(place);
                                     }
                                 } catch (Exception e) {
