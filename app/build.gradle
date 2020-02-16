@@ -33,14 +33,22 @@ repositories {
 
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/mohammedabdo/Desktop/Desktop/my-release-key.keystore')
+            storePassword '66201055'
+            keyAlias = 'my-key-alias'
+            keyPassword '66201055'
+        }
+    }
     compileSdkVersion 26
     buildToolsVersion '28.0.3'
     defaultConfig {
         applicationId          "com.mpa.android.nefertari" //"com.mpa.android.nefertari" //com.mpa.android.nefertari
         minSdkVersion 21
-        targetSdkVersion 26
-        versionCode 18
-        versionName "1.12"
+        targetSdkVersion 28
+        versionCode 1
+        versionName '1.0'
         multiDexEnabled true
         resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
     }
