@@ -1,41 +1,42 @@
 {
   "project_info": {
-    "project_number": "35857925463",
-    "firebase_url": "https://mpa-travel.firebaseio.com",
-    "project_id": "mpa-travel",
-    "storage_bucket": "mpa-travel.appspot.com"
+    "project_number": "306007671759",
+    "firebase_url": "https://nefertariapp.firebaseio.com",
+    "project_id": "nefertariapp",
+    "storage_bucket": "nefertariapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:35857925463:android:40f30f6e2430947ff52a12",
+        "mobilesdk_app_id": "1:306007671759:android:bbe9f77c552777caef48ba",
         "android_client_info": {
           "package_name": "com.mpa.android.nefertari"
         }
       },
       "oauth_client": [
         {
-          "client_id": "35857925463-li36nl53vkd281338gej7p8496svk2mc.apps.googleusercontent.com",
+          "client_id": "306007671759-haar5ufola2lf5le3fnbkd223um7flmd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC92X9SHtnUfUUNRJTkdpM7CqEjXmT2OHw"
+          "current_key": "AIzaSyADVJ_BtK8_ro6FBHFemjxWsIfDIMaW4X0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "35857925463-li36nl53vkd281338gej7p8496svk2mc.apps.googleusercontent.com",
+              "client_id": "306007671759-haar5ufola2lf5le3fnbkd223um7flmd.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "35857925463-5pu3ug3k4oa3d2g3r960s5mtp07438qu.apps.googleusercontent.com",
+              "client_id": "306007671759-ob78qv61439gmkvhist918elssj2jbrg.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.mpa.nefertari"
+                "bundle_id": "com.mpa.nefertari",
+                "app_store_id": "1490210925"
               }
             }
           ]
